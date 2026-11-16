@@ -1,15 +1,17 @@
 {
   "expo": {
-    "name": "streakup",
+    "name": "StreakUp",
     "slug": "streakup",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tirth1263.streakup"
     },
     "android": {
+      "package": "com.tirth1263.streakup",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -19,7 +21,21 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single",
+      "name": "StreakUp – Habit Tracker",
+      "shortName": "StreakUp",
+      "description": "A simple, private habit tracker. Tap once a day and watch your streak grow.",
+      "themeColor": "#16A34A",
+      "backgroundColor": "#F4F6F8"
+    },
+    "experiments": {
+      "baseUrl": "/StreakUp-Habit-Tracker"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-notifications"
+    ]
   }
 }
